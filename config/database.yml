@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  utl: <%= ENV["DATABASE_URL"] %>
   database: coursegoapp_production
   username: coursegoapp
   password: <%= ENV["COURSEGOAPP_DATABASE_PASSWORD"] %>
